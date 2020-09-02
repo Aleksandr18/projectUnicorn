@@ -177,6 +177,7 @@ header.fixed {
     border-bottom: 2px solid #00B3C1;
     margin-left: 8px;
     transform: rotate(45deg);
+    margin-bottom: 3px;
 }
 
 .call {
@@ -348,7 +349,7 @@ header.fixed {
     position: relative;
     border-radius: 4px;
     box-shadow: 0px 2px 5px rgba(162, 171, 189, 0.3);
-    padding: 47px 0px 44px;
+    padding: 42px 0px 39px;
     z-index: 1;
 }
 
@@ -784,13 +785,12 @@ header.fixed {
 }
 
 .blog_1 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .block_2 {
     opacity: .5;
-    padding: 10px 0;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .block_2:after {
@@ -816,7 +816,6 @@ header.fixed {
 
 .newsAllLink {
     text-align: center;
-    max-width: 412px;
     width: 100%;
     margin-bottom: 74px;
 
@@ -830,8 +829,7 @@ header.fixed {
     text-decoration: none;
     display: inline-block;
     text-align: center;
-    max-width: 163px;
-    width: 100%;
+    width: auto;
 
 
 }
@@ -849,7 +847,7 @@ header.fixed {
 
     padding: 0 81px;
     padding-top: 109px;
-    padding-bottom: 43px;
+    padding-bottom: 63px;
 
     display: flex;
 
@@ -877,7 +875,7 @@ header.fixed {
     flex-wrap: wrap;
     max-width: 696px;
     position: relative;
-
+    margin-bottom: 0;
 }
 
 .rectangleContent::before {
@@ -901,6 +899,7 @@ header.fixed {
     border-radius: 100px;
     border: transparent;
     max-width: 456px;
+    margin-bottom: 12px;
     width: calc(100% - 240px);
     padding: 25px;
     margin-right: 24px;
@@ -918,6 +917,7 @@ header.fixed {
     background: transparent;
 
     color: #fff;
+    margin-bottom: 12px;
 
     font-size: 16px;
     cursor: pointer;
@@ -939,7 +939,8 @@ header.fixed {
 .rectangleText {
     font-size: 12px;
     line-height: 1.2;
-
+    margin-top: 0;
+    margin-bottom: 0;
     color: #FFFFFF;
     text-align: center;
 }
