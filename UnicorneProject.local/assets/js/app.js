@@ -8,20 +8,20 @@ $(document).ready(function(){
         responsiveClass:true,
         responsive: {
 
-            300: {
-                items: 1,
-                nav: false,
+            100: {
                 loop: true,
+                items: 1,
+                nav: true,
                 autoplay: true
             },
-
-            540: {
+            980: {
                 loop: true,
-                items: 1,
-                nav: false,
-
+                items: 3,
+                nav: true,
+                autoplay: true
             },
             1200: {
+                loop: true,
                 items: 3,
                 nav: true
 
@@ -29,19 +29,6 @@ $(document).ready(function(){
         }
     });
 
-    // $(function() {
-    //
-    //     let nav = $("#nav-h");
-    //
-    //     let navToggle = $("#navToggle");
-    //     navToggle.on("click", function() {
-    //
-    //         event.preventDefault();
-    //         nav.toggleClass("show");
-    //
-    //
-    //     });
-    // });
 
     document.querySelector('.burger').addEventListener('click', function(){
         document.querySelector('.burger span').classList.toggle('active');
@@ -72,11 +59,7 @@ $(document).ready(function(){
                 header.removeClass("fixed");
             }
         });
-
-
     });
-
-
 });
 
 
