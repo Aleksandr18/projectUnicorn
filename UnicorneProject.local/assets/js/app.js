@@ -20,7 +20,7 @@ $(document).ready(function(){
                 nav: true,
                 autoplay: true
             },
-            1200: {
+            1201: {
                 loop: true,
                 items: 3,
                 nav: true
@@ -45,7 +45,7 @@ $(document).ready(function(){
 
 
     $(function() {
-        let header = $("#header");
+        let header = $("header");
         let scrollPos = $(window).scrollTop();
 
 
