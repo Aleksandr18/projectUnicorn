@@ -1,32 +1,12 @@
 $(document).ready(function(){
 
     $('.owl-curse').owlCarousel({
-        loop:false,
+        loop:true,
+        autoplay: 3000,
         margin:24,
         nav:true,
         autoWidth: true,
         responsiveClass:true,
-        responsive: {
-
-            100: {
-                loop: true,
-                items: 1,
-                nav: true,
-                autoplay: true
-            },
-            980: {
-                loop: true,
-                items: 3,
-                nav: true,
-                autoplay: true
-            },
-            1201: {
-                loop: true,
-                items: 3,
-                nav: true
-
-            },
-        }
     });
 
 

@@ -97,7 +97,7 @@ header.fixed {
     font-weight: 500;
 }
 
-.link-h.main-c::after {
+.main-c::after {
     content: "";
     display: inline-block;
     width: 7px;
@@ -105,14 +105,17 @@ header.fixed {
     border-right: 2px solid #00B3C1;
     border-bottom: 2px solid #00B3C1;
     margin-left: 8px;
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
     margin-bottom: 3px;
+}
+
+.link-h.main-c::after {
+    transform: rotate(45deg);
 }
 
 .call {
     text-decoration: none;
     color: #4D5777;
-    margin-right: 14px;
     font-weight: 500;
 }
 
@@ -129,6 +132,11 @@ header.fixed {
     background-repeat: no-repeat;
 }
 
+.headerLink .call,
+.call::before {
+    margin-right: 14px;
+}
+
 .reg {
     display: flex;
     align-items: center;
@@ -141,7 +149,7 @@ header.fixed {
 .btnReg {
     max-width: 160px;
     width: 100%;
-    padding: 12.5px 28px;
+    padding: 12.5px 30px;
     border: 2px solid #00B3C1;
     color: #4D5777;
 }
@@ -207,8 +215,11 @@ header.fixed {
     color: #fff;
     max-width: 540px;
     width: 100%;
-    margin: 0 auto 90px auto;
     font-weight: bold;
+}
+
+.wantprogParent .wantprogText {
+    margin: 0 auto 90px auto;
 }
 
 .wantprogParent .btn-first {
@@ -261,12 +272,14 @@ header.fixed {
     font-family: Roboto Slab;
     color: #4D5777;
     line-height: 1.5;
-    padding-bottom: 39px;
-    margin: auto;
-    max-width: 497px;
+    max-width: 504px;
     width: 100%;
+    margin: auto;
 }
 
+ .blogCurseText p {
+    padding-bottom: 39px;
+}
 
 
 .figure {
@@ -294,8 +307,8 @@ header.fixed {
     padding-bottom: 96px;
 }
 
-.curseTitle {
-    font-family: 'Roboto Slab';
+.title {
+    font-family: "Roboto Slab";
     font-size: 28px;
     line-height: 1.5;
     text-align: center;
@@ -303,18 +316,26 @@ header.fixed {
     font-weight: bold;
 }
 
-.curseText {
+.curseTitle {
+
+}
+
+.subtext {
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
     color: #4D5777;
+}
+
+.curseText {
     margin-bottom: 67px;
 }
+
 
 .chooseCurse {
     display: flex;
     margin-bottom: 81px;
-    margin-right: calc(643px - 50vw);
+    margin-right: calc(640px - 50vw);
 }
 
 .curseBlockCurse {
@@ -342,7 +363,7 @@ header.fixed {
     padding-right: 56px;
 }
 
-.curseAll {
+.curseLink {
     color: #00B3C1;
     text-decoration: none;
 }
@@ -372,14 +393,13 @@ header.fixed {
 
 .curseTitleCurse {
     font-size: 18px;
-    text-align: center;
     color: #354975;
     margin-bottom: 31px;
     overflow: hidden;
-    max-width: 290px;
+    max-width: 168px;
     width: 100%;
-    height: 22px;
-    overflow: hidden;
+    margin: 31px auto;
+    font-family: "Roboto Slab";
     font-weight: bold;
 }
 
@@ -387,18 +407,18 @@ header.fixed {
     font-size: 16px;
     text-align: center;
     color: #151D29;
-    max-width: 182px;
+    max-width: 215px;
     width: 100%;
     margin: auto;
     height: 57px;
+    padding: 0 17px;
     overflow: hidden;
 }
 
 /* carousel */
 
 .owl-curse {
-    width: calc(100% - 314px);
-    max-width: 1028px;
+    width: calc(100% - 319px);
 }
 
 
@@ -480,7 +500,6 @@ header.fixed {
     max-width: 160px;
     width: 100%;
     border: 2px solid #FFFFFF;
-    border-radius: 100px;
     padding: 15px;
     color: #fff;
 }
@@ -500,7 +519,7 @@ header.fixed {
     transform: translate(-50%, 0);
     max-width: 241px;
     width: 100%;
-    padding: 25px;
+    padding: 22.5px;
     border: 4px solid #00B3C1;
     color: #00B3C1;
 }
@@ -520,20 +539,10 @@ header.fixed {
 }
 
 .trainingTitle {
-    font-family: Roboto Slab;
-    font-weight: bold;
-    font-size: 28px;
-    text-align: center;
-    color: #354975;
     margin-bottom: 9px;
 }
 
 .trainingText {
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    color: #4D5777;
-    font-weight: normal;
     margin-bottom: 81px;
 }
 
@@ -554,10 +563,11 @@ header.fixed {
     font-weight: bold;
     font-size: 18px;
     color: #354975;
-    max-width: 439px;
+    max-width: 536px;
     width: 100%;
     margin-bottom: 40px;
     line-height: 1.5;
+    padding-right: 97px;
 }
 
 .trainingCurseText {
@@ -582,16 +592,8 @@ header.fixed {
 }
 
 .trainingPrep::after {
-    content: "";
-
-    display: inline-block;
-
-    width: 7px;
-    height: 7px;
-    border-right: 2px solid #00B3C1;
-    border-bottom: 2px solid #00B3C1;
-    transform: rotate(-45deg);
-    cursor: pointer;
+    margin-left: 0;
+    margin-bottom: 0;
 }
 
 .trainingImg {
@@ -645,17 +647,15 @@ header.fixed {
 /* news */
 
 .news {
-    padding: 92px 0;
+    /*padding: 92px 0;*/
 }
 
 .newsTitle {
-    font-family: Roboto Slab;
-    font-size: 28px;
-    line-height: 1.5;
-    text-align: center;
-    color: #354975;
-    font-weight: bold;
     margin-bottom: 26px;
+}
+
+.newsNewLink {
+    padding: 92px 0;
 }
 
 .newsBlock {
@@ -677,7 +677,7 @@ header.fixed {
     padding: 0 15px;
     width: 33.33333%;
     color: #151D29;
-    margin-bottom: 42px;
+    margin-bottom: 60px;
 }
 
 .newsLink {
@@ -693,24 +693,10 @@ header.fixed {
     z-index: 1;
 }
 
-.blog_1 {
+.newsBlockNews p {
     margin-bottom: 15px;
 }
 
-.block_2 {
-    color: rgba(21,29,41,0.5);
-    margin-bottom: 15px;
-}
-
-.block_2:after {
-    content: "";
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-    border-right: 2px solid #00B3C1;
-    border-bottom: 2px solid #00B3C1;
-    transform: rotate(-45deg);
-}
 
 .block_3 {
     opacity: .5;
@@ -719,20 +705,13 @@ header.fixed {
 .newsAllLink {
     text-align: center;
     width: 100%;
-    margin-bottom: 74px;
-}
-
-.newsAll {
-    font-size: 16px;
-    line-height: 1.2;
-    color: #00B3C1;
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-    width: auto;
 }
 
 /* Rectangle */
+
+.newsRectangleContent {
+    padding-bottom: 96px;
+}
 
 .newsRectangle {
 
@@ -789,13 +768,18 @@ header.fixed {
     border-radius: 100px;
     border: transparent;
     max-width: 456px;
-    margin-bottom: 12px;
+
     width: calc(100% - 240px);
     padding: 25px;
-    margin-right: 24px;
+
     font-size: 16px;
     color: #4D5777;
     outline: 0;
+}
+
+.rectangleContent .newsEmail {
+    margin-right: 24px;
+    margin-bottom: 12px;
 }
 
 .newsEmail::placeholder {
@@ -805,9 +789,12 @@ header.fixed {
 .btnSubscribe {
     max-width: 216px;
     width: 100%;
-    padding: 25px;
+    padding: 24.5px;
     border: 2px solid #FFFFFF;
     color: #fff;
+}
+
+.rectangleContent .btnSubscribe {
     margin-bottom: 12px;
 }
 
@@ -831,12 +818,8 @@ header.fixed {
 }
 
 .lastTitle {
-    line-height: 1.5;
-    text-align: center;
-    color: #4D5777;
-    max-width: 504px;
-    width: 100%;
-    margin: auto;
+    font-size: 16px;
+    font-family: Roboto;
     margin-bottom: 37px;
 }
 
@@ -990,6 +973,12 @@ footer {
 
 /* media */
 
+@media (max-width: 1286px) {
+    .chooseCurse {
+        margin-right: 0;
+    }
+}
+
 @media (max-width: 1200px) {
 
     .wantprogParent {
@@ -997,9 +986,7 @@ footer {
         width: 100%;
     }
 
-    .chooseCurse {
-        margin-right: 0;
-    }
+
 
     .curseInner {
         background-position: left 4%, 1.5% 6%;
@@ -1106,6 +1093,9 @@ footer {
 
     .call {
         font-size: 20px;
+    }
+
+    .headerLink .call {
         margin-right: 0;
     }
 
@@ -1128,11 +1118,13 @@ footer {
         width: 100%;
     }
 
+   .wantprogParent .wantprogText {
+       margin-bottom: 40px;
+   }
+
     .wantprogText {
         max-width: 495px;
         font-size: 30px;
-        margin-bottom: 40px;
-
     }
 
     .btn-first {
@@ -1214,7 +1206,7 @@ footer {
         display: none;
     }
 
-    .newsEmail {
+    .rectangleContent .newsEmail {
         margin-bottom: 20px;
         font-size: 12px;
         max-width: 300px;
@@ -1268,10 +1260,13 @@ footer {
         margin-left: auto;
     }
 
+    .wantprogParent .wantprogText {
+        margin-bottom: 20px;
+    }
+
     .wantprogText {
         font-size: 30px;
         max-width: 505px;
-        margin-bottom: 20px;
     }
 
     .btn-first {
@@ -1328,7 +1323,7 @@ footer {
 }
 
 @media (max-width: 600px) {
-    .newsEmail {
+   .rectangleContent .newsEmail {
         margin-right: 0;
     }
 }
@@ -1343,13 +1338,15 @@ footer {
         padding-top: 100%;
     }
 
+    .wantprogParent .wantprogText {
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
 
     .wantprogText {
         font-size: 26px;
         max-width: 257px;
-        margin: 0 auto;
-        margin-bottom: 15px;
-
     }
 
     .btn-first {
@@ -1367,15 +1364,19 @@ footer {
 
     .blogCurseText {
         font-size: 12px;
-        padding: 0 12px;
         max-width: 339px;
         width: 100%;
-        margin-bottom: 15px;
     }
 
-    .figureItem {
-        padding: 4px;
+    .blogCurseText p {
+        margin-bottom: 15px;
+        padding: 0 12px;
     }
+
+    .blogCurseText h4 {
+        font-size: 14px;
+    }
+
 
     .curse {
         padding-top: 137px;
@@ -1389,7 +1390,7 @@ footer {
 
 
     .chooseCurse {
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
 
 
@@ -1435,6 +1436,10 @@ footer {
 
     .rectangleContent .btnSubscribe {
         margin-bottom: 12px;
+    }
+
+    .lastTitle {
+        font-size: 16px;
     }
 
     footer {
