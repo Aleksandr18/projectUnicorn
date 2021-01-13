@@ -127,7 +127,7 @@ header.fixed {
     padding: 18px;
     background-color: #00B3C1;
     margin-right: 18px;
-    background-image: url(/assets/img/phone.svg);
+    background-image: url(../img/phone.svg);
     background-position: center center;
     background-repeat: no-repeat;
 }
